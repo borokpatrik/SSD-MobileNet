@@ -1,0 +1,18 @@
+E:/Coding/ML/Localizations/SSD-MobileNetFPN/models/ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8/pipeline.config
+Edit these key fields:
+
+num_classes: set to the number of classes you're detecting (e.g., 1 for "cat")
+
+fine_tune_checkpoint: point to the pretrained checkpoint:
+
+protobuf
+fine_tune_checkpoint: "E:/Coding/ML/Localizations/SSD-MobileNetFPN/models/ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8/checkpoint/ckpt-0"
+label_map_path: point to your label map:
+
+protobuf
+label_map_path: "E:/Coding/ML/Localizations/dataset/label_map.pbtxt"
+train_input_reader and eval_input_reader: point to your TFRecord files:
+
+protobuf
+input_path: "E:/Coding/ML/Localizations/dataset/train.record"
+input_path: "E:/Coding/ML/Localizations/dataset/val.record"
